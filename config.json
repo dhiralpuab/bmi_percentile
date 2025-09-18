@@ -1,0 +1,136 @@
+{
+  "name": "BMIPercentile",
+  "namespace": "MCRI\\BMIPercentile",
+  "description": "This module calculates BMI percentile",
+  "authors": [
+    {
+      "name": "Dhiral Panjwani",
+      "email": "dpanjwani@uabmc.edu",
+      "institution": "University of Alabama at Birmingham"
+    }
+  ],
+  "system-settings": [
+    {
+      "key": "dob",
+      "name": "Date of birth",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "enc_dt",
+      "name": "Encounter Date",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "age_days",
+      "name": "Age(Days) field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "gender",
+      "name": "Gender field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "height",
+      "name": "Height field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "ht_zscore",
+      "name": "Height Z score field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "ht_pct",
+      "name": "Height %ile field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "weight",
+      "name": "Weight field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "wt_zscore",
+      "name": "Weight Z score field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "wt_pct",
+      "name": "Weight %ile field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "bmi",
+      "name": "BMI field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "bmi_zscore",
+      "name": "BMI Z score field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "bmi_pct",
+      "name": "BMI %ile field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "wfl_zscore",
+      "name": "WFL Z score field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "wfl_pct",
+      "name": "WFL %ile field",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "field-list"
+    },
+    {
+      "key": "cdc_sel",
+      "name": "Use CDC for 2-20 year old",
+      "required": true,
+      "allow-project-overrides": true,
+      "type": "dropdown",
+      "choices": [
+        { "value": "1", "name": "Yes" },
+        { "value": "0", "name": "No" }
+      ]
+    }
+
+  ],
+  "permissions": [
+    "redcap_data_entry_form",
+    "redcap_survey_page",
+    "redcap_survey_complete"
+  ]
+}
